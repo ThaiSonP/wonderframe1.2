@@ -1,0 +1,141 @@
+.container1{
+  display: flex;
+  justify-content: center;
+}
+
+.editContainer{
+  width: 588px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.delete{
+  width: 572px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.delete button{
+  height: 40px;
+  width: 170px;
+  border-radius: 4px;
+  background-color: #EAE0FB
+}
+
+.formContainer{
+  width: 572px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.editforms{
+  width: 572px;
+  display: flex;
+  flex-direction: column;
+  flex: 1
+}
+
+.topForms{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.topForms label{
+  display: flex;
+  width: 572px;
+  height: 18px;
+}
+
+.topForms input{
+  display: flex;
+  width: 542px;
+  height: 22px;
+  padding-top: 8px;
+  padding-right: 14px;
+  padding-bottom: 8px;
+  padding-left: 14px;
+  border: 1px;
+  border-style: solid;
+  border-radius: 4px;
+}
+
+.picture{
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.picture input{
+  display: flex;
+  width: 542px;
+  height: 22px;
+  font-size: 16px;
+  padding-top: 8px;
+  padding-right: 14px;
+  padding-bottom: 8px;
+  padding-left: 14px;
+  border: 1px;
+  border-style: solid;
+  border-radius: 4px;
+}
+
+.picture img{
+  height: 75px;
+  width: 75px;
+}
+
+.aboutme{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.aboutme input{
+  display: flex;
+  width: 542px;
+  height: 72px;
+  padding-top: 10px;
+  padding-right: 14px;
+  padding-bottom: 10px;
+  padding-left: 14px;
+  border: 1px;
+  border-style: solid;
+  border-radius: 4px;
+}
+
+.editfooter{
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.cancel{
+  font-size: 12px;
+  width: 79px;
+  height: 40px;
+  border-style: solid;
+  border-radius: 4px;
+  padding-top: 10px;
+  padding-right: 14px;
+  padding-bottom: 10px;
+  padding-left: 14px;
+  background-color: #EAE0FB
+}
+
+.save{
+  font-size: 12px;
+  width: 127px;
+  height: 40px;
+  background-color: #AD2622;
+  color:  white;
+  border-style: solid;
+  border-radius: 4px;
+  padding-top: 10px;
+  padding-right: 14px;
+  padding-bottom: 10px;
+  padding-left: 14px;
+}

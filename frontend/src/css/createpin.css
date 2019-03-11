@@ -1,0 +1,43 @@
+.pinContainer{
+  display: flex;
+  height: 700px;
+  width: auto;
+  background-color: #EEEEEE;
+  justify-content: center;
+  align-items: center;
+}
+
+.onepin{
+  display: flex;
+  height: auto;
+  width: 864px;
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-top: 32px;
+  padding-bottom:32px;
+  background-color: white;
+  flex-direction: row;
+  border-radius: 6px;
+  justify-content: space-around;
+  align-items: center;
+}
+
+
+.pinimg {
+  width: 496px
+}
+
+.pininfo {
+display: flex;
+flex-direction: column;
+}
+.onepin input {
+  width: 390px;
+  height:32px;
+  padding: 8px;
+  border: 1px;
+  border-color: black;
+  border-style: solid;
+  font-size: 16px;
+  border-radius: 6px
+}

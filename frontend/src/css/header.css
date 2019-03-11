@@ -1,0 +1,105 @@
+.header{
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 16px;
+  padding-right: 16px;
+  border: .05px solid #EFEFEF;
+}
+
+.div1{
+  display: flex;
+  width: 48px;
+  height: 48px;
+  align-items: center;
+  justify-content: center;
+}
+a{
+  text-decoration: none;
+
+}
+
+.logo{
+  width: 28px;
+  height: 28px;
+}
+
+.div2{
+  width: 813px;
+  /* height: 40px; */
+  /* border-radius: 4px; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.div2 input{
+  width: 574px;
+  height: 37px;
+  padding-left: 52px;
+  padding-right: 40px;
+  border-radius: 4px;
+  background-color: #EFEFEF
+}
+
+.div3{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 500px;
+  height: 48px;
+  align-items: center;
+}
+
+.miniDiv1{
+  padding: 8px;
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.miniDiv1 button{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-style: hidden;
+  border-radius: 4px;
+  width: 140px;
+  height: 40px;
+  color: #333;
+  font-weight: bold;
+  font-size: 12px;
+  border-radius: 4px;
+}
+
+button:hover{
+  background-color: #E2E2E2
+}
+
+.miniDiv2{
+  padding: 8px;
+  height: 48px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+
+}
+
+.miniDiv2 button{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-style: hidden;
+  border-radius: 4px;
+  width: 140px;
+  height: 40px;
+  color: #333;
+  font-weight: bold;
+  font-size: 12px;
+  border-radius: 4px;
+}

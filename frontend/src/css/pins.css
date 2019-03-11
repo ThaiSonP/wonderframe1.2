@@ -1,0 +1,18 @@
+.pins{
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.linkpins{
+  width: 236;
+  justify-content: center;
+  align-items: center;
+  padding: 8px
+}
+
+.smallpins{
+  width: 236px;
+}

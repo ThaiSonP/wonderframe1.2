@@ -1,0 +1,38 @@
+.pinContainer{
+  display: flex;
+  height: 963px;
+  width: 1201px;
+  background-color: #EEEEEE;
+  justify-content: center;
+  align-items: center;
+}
+
+.onepin{
+  display: flex;
+  height: auto;
+  width: 864px;
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-top: 32px;
+  padding-bottom:32px;
+  background-color: white;
+  flex-direction: row;
+  border-radius: 6px;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.pinimg{
+  display: flex;
+}
+
+.pinimg img {
+  max-width: 496px;
+  max-height: 500px;
+}
+
+.pininfo a button{
+  width: 37px;
+  height: 20px;
+  border-radius: 6px;
+}

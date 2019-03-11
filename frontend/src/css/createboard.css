@@ -1,0 +1,47 @@
+.boardcontainer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #EFEFEF;
+  height: 700px
+}
+
+
+
+.boardform{
+  width: 500px;
+  height: 330px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: white;
+}
+
+.boardinput {
+  width: 354px;
+  height: 22px;
+  padding-left: 14px;
+  padding-right: 14px;
+}
+
+.boardbuttons{
+  display: flex;
+  flex-direction: row-reverse;
+  height: 60px;
+  align-items: center;
+}
+
+.submitboard{
+  font-size: 12px;
+  width: 127px;
+  height: 40px;
+  background-color: #AD2622;
+  color:  white;
+  border-style: solid;
+  border-radius: 4px;
+  padding-top: 10px;
+  padding-right: 14px;
+  padding-bottom: 10px;
+  padding-left: 14px;
+}
