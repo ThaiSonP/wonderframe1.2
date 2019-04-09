@@ -123,7 +123,6 @@ render() {
                     render={(props)=><PostBoards{...props} user={userid}/>}
                     />
                 </Switch>
-
             </div>
       </>
     )
