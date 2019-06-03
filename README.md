@@ -11,8 +11,7 @@ This is a full stack application meant to mimick the functionality of Pinterest 
 
 </ul>
 <ul>  
-<u>Frontend:</u>
-
+<b>Frontend:</b>
  <b>Using react: </b>
             <li>  the app will display several images.</li>
             <li> users will be able to select images they like and store them (in a board).</li>
