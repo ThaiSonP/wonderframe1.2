@@ -4,25 +4,28 @@ Description:
 
 This is a full stack application meant to mimick the functionality of Pinterest beyond the initial two week period. 
 
-Backend:
+<ul><u>Backend:</u>
 
- Using express - the app will host all the images users will upload as well as their personal profile data.
- Using passport - the app will hash and protect users' passwords & login information.
- 
-Frontend:
+ <li><b>Using express</b> - the app will host all the images users will upload as well as their personal profile data.</li>
+ <li><b>Using passport</b> - the app will hash and protect users' passwords & login information.</li>
 
- Using react - the app will display several images.
-             - users will be able to select images they like and store them (in a board).
-             - users will be allowed to upload images and create new lists of favorited images.
+</ul>
+<ul>  
+<u>Frontend:</u>
 
+ <b>Using react: </b>
+            <li>  the app will display several images.</li>
+            <li> users will be able to select images they like and store them (in a board).</li>
+            <li> users will be allowed to upload images and create new lists of favorited images.</li>
 
-Minimum Viable Product:
+</ul> 
+<ol><u>Minimum Viable Product:</u>
 
-  1.Users  - Can create boards & create images (pins).
+  <li>Users  - Can create boards & create images (pins).</li>
+  <li>Images - Are displayed on the homepage. </li>
+  <li>Boards - Each board is created via A user and are a collections of images. </li>
 
-  2.Images - Are displayed on the homepage.
-
-  3.Boards - Each board is created via A user and are a collections of images.
+</ol>
 
 For more designs & wireframe & schema:
 https://docs.google.com/spreadsheets/d/176ZF78049jfvsMsAW1uH2EN14nfne0hNHhpBXw7nNDc/edit?usp=sharing
