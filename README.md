@@ -2,7 +2,15 @@
 
 Description:
 
-This is a clone of Pinterest. It is an app that shows several images and allows users to catalog images they like. This project will be completed within 2 weeks using redux/ react & express.
+This is a full stack application meant to mimick the functionality of Pinterest within a two week period. 
+Backend:
+ Using express - the app will host all the images users will upload as well as their personal profile data.
+ Using passport - the app will hash and protect users' passwords & login information.
+ 
+Frontend:
+ Using react - the app will display several images.
+             - users will be able to select images they like and store them (in a board).
+             - users will be allowed to upload images and create new lists of favorited images.
 
 
 Minimum Viable Product:
