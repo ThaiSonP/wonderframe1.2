@@ -15,7 +15,7 @@ const getAllPins = (req,res)=>{
 
 const getOnePin = (req,res)=>{
   const id = req.params.id;
-  db.one('select * from pins where id = $1',id)
+  db.one('select *  from pins join users on pins.user_id = users.id where pins.id = $1',[id])
   .then(result=>{
     res.status(200)
     .json({

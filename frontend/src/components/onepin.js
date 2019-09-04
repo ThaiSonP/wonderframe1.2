@@ -19,14 +19,16 @@ class Onepin extends Component{
     const {pinId} = this.state
 
     //we make a seperate axios call for indvidual pins
-    axios.get(`/pins/pin/${pinId}`)
-    .then(response=>{
-      this.setState({
-        pinInfo:response.data.body
+    if(pinId){
+      axios.get(`/pins/pin/${pinId}`)
+      .then(response=>{
+        this.setState({
+          pinInfo:response.data.body
+        })
+      }).catch(err=>{
+        console.log(err)
       })
-    }).catch(err=>{
-      console.log(err)
-    })
+    }
 
   }
 
@@ -52,7 +54,7 @@ class Onepin extends Component{
 
           <h1>{`${pinInfo.title}`}</h1>
           Created by : {" "}
-          <Link to={`/user/${pinInfo.user_id}`}>{pinInfo.user_id}</Link>
+          <Link to={`/user/${pinInfo.user_id}`}>{pinInfo.username}</Link>
           <p>{`${pinInfo.description}`}</p>
         </div>
 
