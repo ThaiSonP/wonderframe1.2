@@ -27,10 +27,11 @@ const Form = ({
           />
         <br/>
         <input
-          type='text'
+          autoComplete='off'
+          type='password'
           value={password}
           name="password"
-          placeholder="password"
+          placeholder="Password"
           onChange={handleChange}
           />
         <br/>

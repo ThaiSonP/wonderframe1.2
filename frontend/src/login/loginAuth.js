@@ -16,6 +16,7 @@ class LoginAuth extends Component {
     this.setState({
       [e.target.name]: e.target.value
     })
+    console.log(this.state)
   }
 
   loginChange = ()=>{
@@ -77,6 +78,7 @@ class LoginAuth extends Component {
           <form onSubmit={login?this.loginUser:this.registerUser}>
             <input
               type='text'
+              autoComplete='off'
               value={username}
               name="username"
               placeholder="username"
@@ -84,15 +86,17 @@ class LoginAuth extends Component {
               />
             <br/>
             <input
-              type='text'
+              autoComplete='off'
+              type='password'
               value={password}
               name="password"
-              placeholder="password"
+              placeholder="Password"
               onChange={this.handleChange}
               />
             <br/>
             <input
               type='text'
+              autoComplete='off'
               value={email}
               name="email"
               placeholder="email"
