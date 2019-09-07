@@ -21,7 +21,7 @@ app.set('view engine', 'jade');
 
 app.use(logger("dev"));
 app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({ extended: false }));
+app.use(bodyParser.urlencoded({ extended: true }));
 app.use(cookieParser("secret"));
 app.use(express.static(path.join(__dirname, "client/build")));
 
@@ -40,10 +40,10 @@ app.use(passport.session());
 app.use(express.static(path.join(__dirname, 'public')));
 
 
-app.use('/', indexRouter);
-app.use('/users', usersRouter);
-app.use('/pins', pinsRouter);
-app.use('/boards', boardsRouter);
+app.use('/api/', indexRouter);
+app.use('/api/users', usersRouter);
+app.use('/api/pins', pinsRouter);
+app.use('/api/boards', boardsRouter);
 
 app.get("*", (req, res) => {
   res.sendFile(path.join(__dirname + "../frontend/build/index.html"));
