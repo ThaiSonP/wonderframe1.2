@@ -8,6 +8,7 @@ var bodyParser = require('body-parser');
 const session = require ('express-session');
 const passport = require('./auth/local')
 
+// Add routes imports here
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 var pinsRouter = require('./routes/pins');
@@ -23,7 +24,7 @@ app.use(logger("dev"));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(cookieParser("secret"));
-app.use(express.static(path.join(__dirname, "client/build")));
+app.use(express.static(path.join(__dirname, "../frontend/build")));
 
 app.use(
   session({
