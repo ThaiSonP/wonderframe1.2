@@ -17,7 +17,5 @@
     "url": "https://github.com/ThaiSonP/wonderframe1.2/issues"
   },
   "homepage": "https://github.com/ThaiSonP/wonderframe1.2#readme",
-  "dependencies": {
-    "heroku": "^7.29.0"
-  }
+  "dependencies": {}
 }
