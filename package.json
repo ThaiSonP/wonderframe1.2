@@ -1,0 +1,23 @@
+{
+  "name": "wonderframe1.2",
+  "version": "1.0.0",
+  "description": "Description:",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./backend/bin/www",
+    "heroku-postbuild": "cd backend && npm install cd../frontend && npm install --only=prod && npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ThaiSonP/wonderframe1.2.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ThaiSonP/wonderframe1.2/issues"
+  },
+  "homepage": "https://github.com/ThaiSonP/wonderframe1.2#readme",
+  "dependencies": {
+    "heroku": "^7.29.0"
+  }
+}

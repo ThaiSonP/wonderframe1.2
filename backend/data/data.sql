@@ -1,7 +1,7 @@
-DROP DATABASE IF EXISTS login;
-CREATE DATABASE login;
+-- DROP DATABASE IF EXISTS login;
+-- CREATE DATABASE login;
 
-\c login;
+-- \c login;
 
 CREATE TABLE users (
   id SERIAL PRIMARY KEY,
