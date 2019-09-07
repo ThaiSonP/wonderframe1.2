@@ -17,7 +17,7 @@ var boardsRouter = require('./routes/boards');
 var app = express();
 
 // view engine setup
-app.set('views', path.join(__dirname, 'views'));
+// app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'jade');
 
 app.use(logger("dev"));
@@ -43,7 +43,7 @@ if (process.env.NODE_ENV === 'production') {
 }
 
 
-app.use('/api/', indexRouter);
+app.use('/', indexRouter);
 app.use('/api/users', usersRouter);
 app.use('/api/pins', pinsRouter);
 app.use('/api/boards', boardsRouter);
