@@ -23,7 +23,7 @@ class PostBoards extends Component{
 
   postBoard=()=>{
     const {name,user_id,description}=this.state
-    axios.post('boards',{
+    axios.post('/api/boards',{
       name:name,
       user_id:user_id,
       description:description

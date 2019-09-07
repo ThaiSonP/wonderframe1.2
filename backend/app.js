@@ -22,7 +22,7 @@ app.set('view engine', 'jade');
 
 app.use(logger("dev"));
 app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({ extended: true }));
+app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser("secret"));
 app.use(express.static(path.join(__dirname, "../frontend/build")));
 
@@ -38,7 +38,9 @@ app.use(passport.initialize());
 app.use(passport.session());
 
 
-app.use(express.static(path.join(__dirname, 'public')));
+if (process.env.NODE_ENV === 'production') {
+  app.use(express.static(path.join(__dirname + '/../frontend/build/')))
+}
 
 
 app.use('/api/', indexRouter);
@@ -47,7 +49,7 @@ app.use('/api/pins', pinsRouter);
 app.use('/api/boards', boardsRouter);
 
 app.get("*", (req, res) => {
-  res.sendFile(path.join(__dirname + "../frontend/build/index.html"));
+  res.sendFile(path.join(__dirname + "/../frontend/build/index.html"));
 });
 
 // catch 404 and forward to error handler

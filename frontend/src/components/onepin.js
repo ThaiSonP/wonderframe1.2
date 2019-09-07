@@ -20,7 +20,7 @@ class Onepin extends Component{
 
     //we make a seperate axios call for indvidual pins
     if(pinId){
-      axios.get(`/pins/pin/${pinId}`)
+      axios.get(`/api/pins/pin/${pinId}`)
       .then(response=>{
         this.setState({
           pinInfo:response.data.body

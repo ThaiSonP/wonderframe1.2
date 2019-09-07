@@ -60,7 +60,7 @@ class LoginAuth extends Component {
   render(){
     const {username,password,email,login}= this.state
     // const {isLoggedIn}=this.props
-
+    console.log(this.state)
     return(
       <div className='body'>
         <div className = 'login'>

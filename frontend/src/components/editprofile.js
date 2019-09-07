@@ -25,7 +25,7 @@ patchProfile=()=>{
   const {username,password,email,bio,pic}=this.state
   const id = this.props.user.id
 
-    axios.patch(`users/${id}`,{
+    axios.patch(`/api/users/${id}`,{
       username: username,
       password:password,
       email:email,
@@ -49,7 +49,7 @@ handleSubmit=(e)=>{
 
 deleteUser=()=>{
   const {id}=this.state
-  axios.delete(`/users/${id}`)
+  axios.delete(`/api/users/${id}`)
   .then(response=>{
     console.log(response)
   }).catch(err=>{

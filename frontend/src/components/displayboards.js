@@ -16,7 +16,7 @@ class DisplayBoards extends Component{
   }
 
   getboards=()=>{
-    axios.get(`/boards/user/${this.state.profileId}`)
+    axios.get(`/api/boards/user/${this.state.profileId}`)
     .then(response=>{
       // console.log(response.data.boards)
       this.setState({

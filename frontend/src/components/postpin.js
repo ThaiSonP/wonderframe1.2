@@ -28,7 +28,7 @@ class PostPin extends Component{
   componentDidMount(){
     const {options,user_id}=this.state
 
-    axios.get(`/boards/user/${user_id}`)
+    axios.get(`/api//boards/user/${user_id}`)
     .then(response=>{
       this.setState({
         options:response.data.boards
@@ -56,7 +56,7 @@ class PostPin extends Component{
   postPin=()=>{
     const{user_id,image,title,board_id,description}=this.state
 
-    axios.post('/pins',{
+    axios.post('/api/pins',{
       user_id: user_id,
       image: image,
       title: title,

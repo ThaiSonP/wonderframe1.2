@@ -28,6 +28,7 @@ CREATE TABLE pins (
   description VARCHAR
 );
 
-INSERT INTO users (username,password,email,bio,pic) values ('Kevin','password123','kev@email','stuff','https://i.etsystatic.com/5805234/r/il/ee362a/878594389/il_570xN.878594389_m98s.jpg');
+-- password123
+INSERT INTO users (username,password,email,bio,pic) values ('Kevin','$2a$10$/rc4mSatML7iXp21IfRAIesA35WM2su5Hr6iHVomgfJTL/NcCPv4S','kev@email','stuff','https://i.etsystatic.com/5805234/r/il/ee362a/878594389/il_570xN.878594389_m98s.jpg');
 INSERT INTO boards (name,user_id,description) values ('pasta',1,'this is a board of pasta');
 INSERT INTO pins (user_id,image,title,board_id,description) values (1,'http://i.imgur.com/IQmFL9e.jpg','pastapasta',1,'pasta'),(1,'https://pbs.twimg.com/media/CzA7zWFUkAAzPYF.jpg','pastafire',1,'pasta')

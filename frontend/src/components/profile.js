@@ -22,7 +22,7 @@ class Profile extends Component{
     const {profileId} = this.state
 
     //we make a seperate axios call for indvidual pins
-    axios.get(`/users/${profileId}`)
+    axios.get(`/api/users/${profileId}`)
     .then(response=>{
       this.setState({
         userInfo:response.data.body
@@ -31,7 +31,7 @@ class Profile extends Component{
       console.log(err)
     })
 
-    axios.get(`/pins/pinuser/${profileId}`)
+    axios.get(`/api/pins/pinuser/${profileId}`)
     .then(response=>{
       // console.log(response.data.boards)
       this.setState({
