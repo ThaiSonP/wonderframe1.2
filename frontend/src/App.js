@@ -27,7 +27,7 @@ class App extends Component {
   }
 
 getPins = ()=>{
-  axios.get('/pins')
+  axios.get('/api/pins')
   .then(response=>{
     this.setState({
       pins:response.data.pins
@@ -41,14 +41,14 @@ componentDidMount = ()=>{
 }
 
 checkAuthenticateStatus = () => {
-  axios.get("/users/status/login").then(user => {
+  axios.get("/api/users/status/login").then(user => {
     if (user.data.id === parseInt(Auth.getToken())) {
       this.setState({
         isLoggedIn: Auth.isUserAuthenticated(),
         userid: parseInt(Auth.getToken())
       })
 
-      axios.get(`/users/${this.state.userid}`)
+      axios.get(`/api/users/${this.state.userid}`)
       .then(result=>{
         this.setState({
           user:result.data.body
@@ -67,7 +67,7 @@ checkAuthenticateStatus = () => {
 
 logoutUser = () => {
   axios
-    .post("/users/logout")
+    .post("/api/users/logout")
     .then(() => {
       Auth.deauthenticateUser();
     })

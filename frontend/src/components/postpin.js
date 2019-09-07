@@ -28,7 +28,7 @@ class PostPin extends Component{
   componentDidMount(){
     const {options,user_id}=this.state
 
-    axios.get(`/api//boards/user/${user_id}`)
+    axios.get(`/api/boards/user/${user_id}`)
     .then(response=>{
       this.setState({
         options:response.data.boards

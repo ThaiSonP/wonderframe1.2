@@ -27,9 +27,9 @@ class LoginAuth extends Component {
   registerUser = async (e) =>{
     e.preventDefault();
     const {username,password,email}=this.state;
-    await axios.post("/users/new",{username,password,email});
+    await axios.post("/api/users/new",{username,password,email});
     Auth.authenticateUser(username)
-    await axios.post('/users/login',{username,password,email})
+    await axios.post('/api/users/login',{username,password,email})
     await this.props.checkAuthenticateStatus()
     this.setState({
       username:"",
@@ -41,7 +41,7 @@ class LoginAuth extends Component {
   loginUser = (e)=>{
     e.preventDefault();
     const {username,password,email}=this.state
-    axios.post('/users/login',{username,password,email})
+    axios.post('/api/users/login',{username,password,email})
     .then((res)=>{
       Auth.authenticateUser(res.data.id)
     })
@@ -60,7 +60,7 @@ class LoginAuth extends Component {
   render(){
     const {username,password,email,login}= this.state
     // const {isLoggedIn}=this.props
-    console.log(this.state)
+    // console.log(this.state)
     return(
       <div className='body'>
         <div className = 'login'>
