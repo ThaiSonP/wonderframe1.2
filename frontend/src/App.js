@@ -26,8 +26,8 @@ class App extends Component {
     isLoggedIn:false
   }
 
-getPins = ()=>{
-  axios.get('/api/pins')
+getPins = async ()=>{
+  await axios.get('/api/pins')
   .then(response=>{
     this.setState({
       pins:response.data.pins
@@ -40,8 +40,8 @@ componentDidMount = ()=>{
   this.getPins();
 }
 
-checkAuthenticateStatus = () => {
-  axios.get("/api/users/status/login").then(user => {
+checkAuthenticateStatus = async () => {
+  await axios.get("/api/users/status/login").then(user => {
     if (user.data.id === parseInt(Auth.getToken())) {
       this.setState({
         isLoggedIn: Auth.isUserAuthenticated(),
@@ -65,8 +65,8 @@ checkAuthenticateStatus = () => {
   });
 };
 
-logoutUser = () => {
-  axios
+logoutUser = async() => {
+  await axios
     .post("/api/users/logout")
     .then(() => {
       Auth.deauthenticateUser();
