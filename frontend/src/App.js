@@ -22,7 +22,6 @@ class App extends Component {
     userid:null,
     pins:[],
     user:[],
-    // search:'',
     isLoggedIn:false
   }
 

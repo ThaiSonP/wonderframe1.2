@@ -12,13 +12,11 @@ class DisplayBoards extends Component{
       boards:null,
       pins:null
     }
-    // console.log(props)
   }
 
   getboards=()=>{
     axios.get(`/api/boards/user/${this.state.profileId}`)
     .then(response=>{
-      // console.log(response.data.boards)
       this.setState({
         boards:response.data.boards
       })
@@ -48,7 +46,6 @@ class DisplayBoards extends Component{
 
   render(){
     const{boards}=this.state
-    console.log(boards)
     return(
       <div>
         this is where boards should appear
